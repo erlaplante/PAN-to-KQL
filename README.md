@@ -9,5 +9,5 @@ Translates a Palo Alto Networks (PAN) filter to Kusto Query Language (KQL). Typi
 * Two versions provided for flexibility or personal preference (Python and Go).
 
 ##### Requirements:
-pyperclip (Python)
+pyperclip (Python)\
 clipboard (Go)
