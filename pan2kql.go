@@ -125,9 +125,9 @@ func main() {
 	addQuotes := regexp.MustCompile(`([!=]= )([^ \)]+)( ?\))`)
 	query = addQuotes.ReplaceAllString(query, "${1}'${2}'${3}")
 
-    // remove quotes around Port (integer)
-    removePortQuotes := regexp.MustCompile(`(Port [!=]= )'(\d+)'`)
-    query = removePortQuotes.ReplaceAllString(query, "${1}${2}")
+	// remove quotes around Port (integer)
+	removePortQuotes := regexp.MustCompile(`(Port [!=]= )'(\d+)'`)
+	query = removePortQuotes.ReplaceAllString(query, "${1}${2}")
 
 	// cleanup potential consecutive single quotes
 	query = strings.Replace(query, "''", "'", -1)
